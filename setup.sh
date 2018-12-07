@@ -2,9 +2,13 @@
 
 cd $GOPATH/src
 
-git clone https://github.com/zelejs/golang.org
+if [ ! -d golang.org ];then
+   git clone https://github.com/zelejs/golang.org
+fi
 
-git clone https://github.com/zelejs/google.golang.org
+if [ ! -d google.golang.org ];then
+   git clone https://github.com/zelejs/google.golang.org
+fi
 
 if [ ! -d /tmp/im ];then
    mkdir /tmp/im
@@ -22,7 +26,7 @@ if [ ! -d /data/logs/imr ];then
    mkdir -p /data/logs/imr
 fi
 
-f [ ! -d /data/logs/im ];then
+if [ ! -d /data/logs/im ];then
    mkdir -p /data/logs/im
 fi
 
