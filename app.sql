@@ -9,3 +9,6 @@ CREATE TABLE `app` (
    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
+INSERT INTO app VALUES (7,'sVDIlIiDUm7tWPYWhi6kfNbrqui3ez44','0WiCxAU1jh76SbgaaFC7qIaBPm2zkyM1','debug app');
+

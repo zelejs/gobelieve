@@ -17,6 +17,7 @@ pip install umysql
 
 ln -s dev_config/config.py config.py
 
+
 export FLASK_ENV=production
 python app.py
 
